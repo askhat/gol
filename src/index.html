@@ -3,7 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>GoL</title>
+    <style>
+        body {
+            user-select: none;
+            background-color: darkgray;
+        }
+    </style>
 </head>
 <body>
+<div>
+    <label for="width">width</label>
+    <input id="width" type="number" min="1" value="30">
+    <label for="height">height</label>
+    <input id="height" type="number" min="1" value="30">
+    <button id="evolve">evolve</button>
+    <button id="seed">seed</button>
+    <button id="clear">clear</button>
+    <span>hit a cell to toggle it</span>
+</div>
+<table></table>
+<script type="module" src="./main.ts"></script>
 </body>
 </html>
